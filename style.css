@@ -343,8 +343,8 @@ section h2 {
     align-items: flex-start;
     width: 100%;
     max-width: 100% !important; 
-    margin: 0 !important; /* Anulamos cualquier margen exterior */
-    padding: 3rem 0 3rem 0 !important; /* CERO padding a la izquierda y derecha */
+    margin: 0 !important; 
+    padding: 3rem 0 3rem 0 !important; 
     gap: 3rem;
 }
 
@@ -471,6 +471,16 @@ section h2 {
 .info-envios ul li {
     margin-bottom: 0.5rem;
     font-size: 1.05rem;
+}
+
+/* Ocultar información de envíos e impuestos en inglés */
+html[lang="en"] .info-envios {
+    display: none;
+}
+
+/* Ocultar el aviso emergente de envío gratis en inglés */
+html[lang="en"] #aviso-envio {
+    display: none !important;
 }
 
 /* AVISO FLOTANTE DE ENVÍO GRATIS */
